@@ -1,0 +1,393 @@
+ /*Anjay Shrestha and UN ID-17425094*/
+/*giving style to my webpages*/
+body{margin-left: 2%; /*margin-left will decreases left side border*/
+  margin-right: 2%; /*margin-right will decreases right side border*/
+  background: lightgray;/*providing color to background*/
+}
+h2,h2,h3,h4,h5,h6,p{margin: 0}
+header{
+  margin-bottom:0%;
+  font-family: serif;
+  font-size: 20px;
+  opacity: 0.6;
+  background: white;
+  display: flex;
+  flex-flow: row;
+}
+
+.logo{
+  width: 40%;
+  display: flex;
+  flex-flow: row;
+ }
+ .logo p{
+   padding-top: 1%;
+   padding-left: 1%;
+   width: 25%;
+ }
+ .logo img{
+   border-radius: 100%;
+   width: 100%;
+   box-shadow: 0 8px 11px gray, 0 8px 11px gray;
+ }
+
+.logo h2{
+  width: 75%;
+  padding-top: 2%;
+  font-family: monospace;
+  color: black;
+}
+.menubar{
+  width: 100%;
+  margin-right: 4%;
+  padding-bottom: 0;
+}
+
+.menubar ul{
+  list-style: none;
+  display: flex;
+  flex-flow:row wrap;
+}
+
+.menubar ul li{
+  margin-right: 1%;
+  text-align: center;
+  width: 24%;
+}
+.menubar ul li:hover{
+  animation-name: name;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 2px 4px 0 gray,0 3px 4px 0 gray;
+}
+/*animation to the navigation on hover*/
+@keyframes name{
+  0%{background-position: center;background-color: gray;}
+  25%{background-position: center;background-color: darkgray;}
+  50%{background-position: center;background-color: lightgray;}
+  100%{background-position: center;background-color: gray;}
+}
+
+.menubar ul li a{
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration: none;
+   font-size: 35px;
+}
+
+ul li.active{
+box-shadow: 0 2px 4px 0 gray,0 3px 4px 0 gray;
+background-color: lightgray;
+text-align: center;
+}
+.home{
+  height: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  animation-name: home;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/*providing animation to the home*/
+@keyframes home{
+    0%{background-position: center;background-color: gray;}
+    25%{background-position: center;background-color: darkgray;}
+    50%{background-position: center;background-color: lightgray;}
+    100%{background-position: center;background-color: gray;}
+  }
+  .home:hover h2{
+    transition: padding-left 3s, color 3s;
+    color: blue;
+    padding-left: 50%;
+  }
+/*page title*/
+.title{
+  opacity: 0.5;
+  padding: 1%;
+  font-family: monospace;
+  font-size: 30px;
+  animation-name: title;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  color:white;
+}
+.title:hover h2{
+  transition: padding-left 6s;
+  padding-left: 75%;
+  animation-name: color;
+  animation-duration: 7s;
+}
+/*providing animation to title h2*/
+@keyframes color {
+  0%{color: white;}
+  5%{color: black;}
+  25%{color: darkblue;}
+  50%{color: darkgreen;}
+  75%{color: darkred;}
+  90%{color: pink;}
+  100%{color: yellow;}
+}
+/*providing animation to title h2*/
+@keyframes title {
+  0%{background-position: center;background-color: black;}
+  25%{background-position: center;background-color: lightblue;}
+  50%{background-position: center;background-color: lightgreen;}
+  100%{background-position: center;background-color: black;}
+}
+/*style section*/
+section{
+display: flex;
+flex-flow: row;
+background: darkgray;
+}
+section article{
+  justify-content: space-around;
+}
+
+.mainbar{
+width: 94.5%;
+border-radius: 5px;
+margin: 1%;
+display: flex;
+flex-flow: row;
+padding-right: 1%;
+background: silver;
+}
+.article-image{
+margin-left: 1%;
+margin-top: 1%;
+margin-bottom: 1.5%;
+width: 30%;
+text-align: center;
+}
+
+.article-image img{
+  width: 90%;
+  box-shadow: 3px 2px 4px 0 gray,2px 3px 4px 0 gray;
+}
+.article-image img:hover{
+transition: transform 3s, border-radius 2s;
+transform: rotate(360deg);
+border-radius: 50%;
+}
+.article-image h2{
+  font-family: monospace;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 40px;
+  padding: 1px;
+  background: lightgrey;
+  box-shadow: 3px 2px 4px 0 gray,2px 3px 4px 0 gray;
+}
+.information{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  margin-left: 0.6%;
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+}
+.discription p{
+  font-family:sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.web{
+  margin-top: 1%;
+}
+
+.web p{
+  font-family: sans-serif;
+  font-size: 20px;
+  background: blue;
+  width: 20%;
+  padding: 1%;
+  border-radius: 10%;
+  animation-name: p;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes p {
+  0%{background: blue;color: black;}
+  25%{background: green;color: yellow;}
+  50%{background: red;color: blue;}
+  75%{background: pink;color: purple;}
+  100%{background: blue;color: red;}
+}
+.web:hover p{
+  transition: width 3s, tansform 3s, padding 3s,font-size 3s;
+  text-align: center;
+  width: 80%;
+  font-size: 60px;
+  padding: 5%;
+  transform: translate(60px, 110px);
+}
+.Contact-me{
+  width: 100%;
+  margin-left: 5%;
+
+}
+.Contact-me form p{
+  color:red;
+  padding-left: 5%;
+}
+fieldset{
+  width: 90%;
+}
+legend{
+  font-size: 40px;
+  font-family: monospace;
+}
+label{
+    font-family:sans-serif;
+}
+input[type=text]{
+  color: black;
+  width:30%;
+  height: 30%;
+  padding: 1%;
+  background: lightgray;
+  font-family: monospace;
+}
+.name h2{
+  margin-left: 3.5%;
+  margin-bottom: 1%;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.education{
+  margin-left: 3.5%;
+  font-family: sans-serif;
+  text-align: justify;
+}
+.education p{
+  font-family: sans-serif;
+  margin-left: 1%;
+  font-size: 16px;
+}
+.CV{
+  padding-left: 3%;
+margin-right: 1%;
+width: 100%;
+display: flex;
+flex-flow: row wrap;
+font-family: sans-serif;
+font-size: 16px;
+}
+.CV article{
+  margin: 2%;
+}
+.Biography {
+margin-top: 1%;
+margin-left: 1%;
+width: 70%;
+text-align: justify;
+font-size: 20px;
+font-family: sans-serif;
+
+}
+.sidebar{
+  width: 5.5%;
+}
+
+.follow-me{
+  display: flex;
+  flex-flow: column;
+}
+.follow-me h2{
+  font-size: 20px;
+text-align: right;
+}
+.follow-me p{
+  text-align: right;
+}
+
+.follow-me img {
+  margin: 3%;
+  background: lightblue;
+  border-radius: 50%;
+  width: 60%;
+}
+
+.follow-me img:hover{
+  background: lightgray;
+  box-shadow: 3px 2px 4px 0 gray,2px 3px 4px 0 gray;
+}
+
+footer{
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+    background: white;
+    opacity: 0.6;
+    display: flex;
+    flex-flow: row;
+}
+
+.Copyright {
+padding-right: 3%;
+  font-size: 16px;
+ font-family: sans-serif;
+  width: 30%;
+text-align: right;
+}
+.location{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 40%;
+}
+.location h2{
+  background: darkgray;
+  font-family: monospace;
+}
+.location p iframe{
+   width:400px;
+   height:300px;
+ }
+.Contact{
+  padding-top: 0;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  font-size: 16px;
+  font-family:sans-serif;
+  text-align: left;
+  width: 30%;
+}
+footer p:hover{
+text-decoration: underline;
+}
+footer div p{
+  color: black;
+}
+/*for mobile to make my webpage responsive*/
+@media all and (max-width:1200px)
+{
+header,.CV,section,.mainbar{flex-flow: column;}
+ .menubar ul{flex-flow: row;}
+ .mainbar{width: 97%;}
+   .home{text-align: left;}
+   .title{font-size: 20px;}
+    .home:hover h2{padding-left: 20%;}
+    .title:hover h2{transition: padding-left 3s;padding-left: 40%;}
+ .menubar ul li{width: 25%;margin-right: 6%;}
+ .menubar ul li a{font-size: 20px;}
+     .article-image{width: 100%;text-align: center;}
+     .article-image img{width: 50%;text-align: center;}
+      .article-image h2{font-size: 20px;width: 49.8%;margin-left: 25%;}
+         .information{width: 99%;}
+        .web{height: 100px;text-align: center;}
+        .web p{width: 60%;font-size: 10px;}
+         .web:hover p{  width: 60%;font-size: 20px;padding: 3%;transform: translate(20px, 45px);}
+         .Biography{width: 99%;}
+       .Contact-me{width: 100%;}
+       fieldset{width: 70%;}
+       legend{font-size: 30px;}
+        input[type="text"]{width: 60%;}
+        .sidebar{width: 100%;}
+            .follow-me{flex-flow: row;}
+  footer{flex-flow: column;}
+      .Contact,.location,.Copyright{text-align: center;width: 100%;}
+      .location p iframe{width:260px;height:180px;}
+      .location h2{width: 50%;text-align: center;margin-left: 25%;}
+}

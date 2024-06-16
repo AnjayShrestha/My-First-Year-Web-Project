@@ -1,7 +1,6 @@
 # csy1018-assign1
 Anjay Shrestha.
 UN ID: 17425094.
-Github Link: https://baucha123.github.io/csy1018-assign1/
 Assignment: My assignment is to make a website which will show my biography, CV, and a page to contact.
 Time spent to complete assignment: (20-30)hours, almost 4 weeks.
 Title of my assignment: Assignment1-Simple CV Portfolio.
